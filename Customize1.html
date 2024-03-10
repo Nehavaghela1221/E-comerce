@@ -3,8 +3,20 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=   <main class=" container">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+    $(document).ready(function() {
+ 
+ $('.color-choose input').on('click', function() {
+     var headphonesColor = $(this).attr('data-image');
 
+     $('.active').removeClass('active');
+     $('.left-column img[data-image = ' + headphonesColor + ']').addClass('active');
+     $(this).addClass('active');
+ });
+
+});
+</script>
     <style>
         /* Basic Styling */
         html,
@@ -27,19 +39,21 @@
             width: 65%;
             position: relative;
         }
-/* Left Column */
-.left-column img {
-  width: 100%;
-  position: absolute;
-  left: 0;
-  top: 0;
-  opacity: 0;
-  transition: all 0.3s ease;
-}
- 
-.left-column img.active {
-  opacity: 1;
-}
+
+        /* Left Column */
+        .left-column img {
+            width: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            opacity: 0;
+            transition: all 0.3s ease;
+        }
+
+        .left-column img.active {
+            opacity: 1;
+        }
+
         .right-column {
             width: 35%;
             margin-top: 60px;
@@ -99,15 +113,15 @@
         }
 
         .color-choose input[type="radio"]#red+label span {
-            background-color: #C91524;
+            background-color: #000000;
         }
 
         .color-choose input[type="radio"]#blue+label span {
-            background-color: #314780;
+            background-color: #a58b34;
         }
 
         .color-choose input[type="radio"]#black+label span {
-            background-color: #323232;
+            background-color: #ffffff;
         }
 
         .color-choose input[type="radio"]:checked+label span {
@@ -242,70 +256,70 @@
 <body>
 
     <main class="container">
- 
+
         <!-- Left Column / Headphones Image -->
         <div class="left-column">
-          <img data-image="black" src="red.png" alt="">
-          <img data-image="blue" src="blue.png" alt="">
-          <img data-image="red" class="active" src="red.png" alt="">
+            <img data-image="red" src="img/61chEXAHgVL._SY695_.jpg" alt="">
+            <img data-image="blue" src="img/61Le3WZ3ekL._SY695_.jpg" alt="">
+            <img data-image="black" class="active" src="img/61Zhw81jJ0L._SY695_.jpg" alt="">
         </div>
-       
-       
+
+
         <!-- Right Column -->
         <div class="right-column">
-       
-          <!-- Product Description -->
-          <div class="product-description">
-            <span>Headphones</span>
-            <h1>Beats EP</h1>
-            <p>The preferred choice of a vast range of acclaimed DJs. Punchy, bass-focused sound and high isolation. Sturdy headband and on-ear cushions suitable for live performance</p>
-          </div>
-       
-          <!-- Product Configuration -->
-          <div class="product-configuration">
-       
-            <!-- Product Color -->
-            <div class="product-color">
-              <span>Color</span>
-       
-              <div class="color-choose">
-                <div>
-                  <input data-image="red" type="radio" id="red" name="color" value="red" checked>
-                  <label for="red"><span></span></label>
-                </div>
-                <div>
-                  <input data-image="blue" type="radio" id="blue" name="color" value="blue">
-                  <label for="blue"><span></span></label>
-                </div>
-                <div>
-                  <input data-image="black" type="radio" id="black" name="color" value="black">
-                  <label for="black"><span></span></label>
-                </div>
-              </div>
-       
+
+            <!-- Product Description -->
+            <div class="product-description">
+               
+                <h1>G L Trend Men's Patent Leather Shining Sports, Casuals, Gym, Training, Running Shoe for Men </h1>
+                <p>Party Wear Sports Shoe for Men</p>
             </div>
-       
-            <!-- Cable Configuration -->
-            <div class="cable-config">
-              <span>Cable configuration</span>
-       
-              <div class="cable-choose">
-                <button>Straight</button>
-                <button>Coiled</button>
-                <button>Long-coiled</button>
-              </div>
-       
-              <a href="#">How to configurate your headphones</a>
+
+            <!-- Product Configuration -->
+            <div class="product-configuration">
+
+                <!-- Product Color -->
+                <div class="product-color">
+                    <span>Color</span>
+
+                    <div class="color-choose">
+                        <div>
+                            <input data-image="red" type="radio" id="red" name="color" value="red" checked>
+                            <label for="red"><span></span></label>
+                        </div>
+                        <div>
+                            <input data-image="blue" type="radio" id="blue" name="color" value="blue">
+                            <label for="blue"><span></span></label>
+                        </div>
+                        <div>
+                            <input data-image="black" type="radio" id="black" name="color" value="black">
+                            <label for="black"><span></span></label>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Cable Configuration -->
+                <div class="cable-config">
+                    <span>Cable configuration</span>
+
+                    <div class="cable-choose">
+                        <button>6UK</button>
+                        <button>7UK</button>
+                        <button>8UK</button>
+                    </div>
+
+                    <a href="#">How to configurate your headphones</a>
+                </div>
             </div>
-          </div>
-       
-          <!-- Product Pricing -->
-          <div class="product-price">
-            <span>148$</span>
-            <a href="#" class="cart-btn">Add to cart</a>
-          </div>
+
+            <!-- Product Pricing -->
+            <div class="product-price">
+                <span>148$</span>
+                <a href="#" class="cart-btn">Add to cart</a>
+            </div>
         </div>
-      </main>
+    </main>
 
 </body>
 
