@@ -1,51 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us</title>
-     <!-- 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Add custom styles here */
+  </style>
+  <!-- 
     - favicon
   -->
   <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
 
-   <style>
-     body{
-        background-color: white;
-        background-image: url(assets/images/2.jpg);
-        background-size: cover;
-    }
-    .container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 10px;
-    background-color: whitesmoke;
-    border: 2px dotted ;
-}
-
-h1 {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.content {
-    line-height: 1.6;
-}
-
-p {
-    margin-bottom: 15px;
-}
-
-   </style>
 </head>
 <body>
-    <div class="container">
-        <h1>About Us</h1>
-        <div class="content">
-            <p>Welcome to our custom shoes and laces website! We are passionate about providing you with high-quality, customizable footwear options to express your unique style.</p>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light" >
+    <a class="navbar-brand" href="#">
+        <img src="assets/images/1.jpg" height="100" alt="HappyFeet"
+          loading="lazy" />
+      </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-6 offset-md-3">
+        <h2>About Us</h2>
+        <p>Welcome to our custom shoes and laces website! We are passionate about providing you with high-quality, customizable footwear options to express your unique style.</p>
             <p>Our mission is to offer a wide range of shoe styles and customization options, allowing you to create the perfect pair of shoes that reflect your personality and preferences.</p>
             <p>Whether you're looking for vibrant colors, intricate designs, or premium materials, we've got you covered. Our team is dedicated to ensuring your satisfaction with every purchase.</p>
-        </div>
+      </div>
     </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
